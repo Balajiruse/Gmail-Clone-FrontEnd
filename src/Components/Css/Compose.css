@@ -1,0 +1,77 @@
+.compose-button{
+    background-color: #c2e7ff;
+    border-radius:16px;
+    height:56px;
+    width:142.47px;
+    padding-bottom: 3px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    margin: 5px 0px 16px 10px;
+  }
+
+
+.compose-main{
+    position: fixed;
+    right: 40px;
+    bottom: 0px;
+    width: 590px;
+    height: 630px;
+    box-shadow: 15px 10px 12px 20px rgba(196, 196, 196, 0.635);
+    background-color: white;
+    border-radius: 40px;
+  }
+  .compose-text-to,.compose-text-subject,.compose-text-mail{
+    border: none;
+  }
+  .compose-text-mail{
+    height: 400px;
+    width: 100%;
+  }
+  .compose-from-to{
+    padding: 16px;
+    
+  }
+  .compose-flex-item{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    padding: 16px;
+    background-color:rgb(247, 247, 247);
+  }
+  .TbArrowsDiagonal,.MdMinimize,.IoClose{
+    padding: 5px;
+  }
+  .TbArrowsDiagonal:hover,.MdMinimize:hover,.IoClose:hover{
+    cursor: pointer;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+  }
+  .compose-text-to:focus,.compose-text-subject:focus,.compose-text-mail:focus{
+    outline: none;
+  }
+  .compose-send-button{
+    background-color: #0b57d0;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    width: 90px;
+    height: 35px;
+    
+  }
+  .pencil-icon{
+    font-size: 15px;
+    padding-right: 7px;
+    
+  }
+  .compose-text{
+    padding: -5px;
+  }
+  .compose-button:hover{
+    box-shadow: 5px 8px 8px 5px #c5c5c5;
+    cursor: pointer;
+  }
+
+ .compose-flex-item{
+  background-color: #e3e7ef;
+ }
