@@ -17,6 +17,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Api } from "./Api";
 
 export default function Tabss({ setSelectedmail }) {
   const navigate = useNavigate();
@@ -27,13 +28,13 @@ export default function Tabss({ setSelectedmail }) {
     setValue(newValue);
   };
   useEffect(() => {
-    fetch("https://gmail-clone-xbb8.onrender.com/gmail_data")
+    fetch(`${Api}/gmail_data`)
       .then((response) => response.json())
       .then((data) => setMails(data));
   });
   const handleDelete = (name) => {
     axios
-      .delete("https://gmail-clone-xbb8.onrender.com/gmail_data/" + name)
+      .delete(`${Api}/gmail_data/` + name)
   };
 
   return (

@@ -8,6 +8,8 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import { Api } from "./Api";
+
 
 
 function Copyright(props) {
@@ -40,7 +42,7 @@ function Signup() {
   const handleSubmit = () => {
     axios
       .post(
-        "https://gmail-clone-xbb8.onrender.com/users/signup",
+        `${Api}/users/signup`,
         JSON.stringify(signup),
         {
           headers: {
@@ -71,6 +73,7 @@ function Signup() {
             onChange={handleChange}
             placeholder="Full name"
             className="sign-in-email"
+            type="name"
             
           
           >
@@ -84,6 +87,7 @@ function Signup() {
            variant="outlined"
            onChange={handleChange}
            placeholder="Email"
+           type="email"
           
            
           >
@@ -99,6 +103,7 @@ function Signup() {
             variant="outlined"
            onChange={handleChange}
            placeholder="Password"
+           type="password"
            
           
           

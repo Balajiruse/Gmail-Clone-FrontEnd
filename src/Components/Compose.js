@@ -7,6 +7,7 @@ import axios from "axios";
 import AttachFileRoundedIcon from '@mui/icons-material/AttachFileRounded';
 import Button from '@mui/material/Button';
 import "./Css/Compose.css"
+import { Api } from "./Api";
 
 
 let initialValue = {
@@ -25,7 +26,7 @@ function Compose(props) {
   const handleSubmit = () => {
     axios
       .post(
-        "https://gmail-clone-xbb8.onrender.com/gmail_data",
+        `${Api}/gmail_data`,
         JSON.stringify(data),
         {
           headers: {

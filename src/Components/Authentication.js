@@ -5,6 +5,7 @@ import {useFormik} from 'formik';
 import Card from '@mui/material/Card'; // Example import from Material-UI
 import { Button, TextField } from "@mui/material";
 import Checkbox from '@mui/material/Checkbox'; // Adjust the import path based on your library
+import { Api } from "./Api";
 
 
 
@@ -24,7 +25,7 @@ function Authentication() {
   });
 
   const login = async (userDetails) => {
-  const data=await fetch("https://gmail-clone-xbb8.onrender.com/users/login",{
+  const data=await fetch(`${Api}/users/login`,{
       method:'POST',
       headers: {
         "Content-type": "application/json",
@@ -65,6 +66,7 @@ label="Email"
 variant="outlined"
 onChange={formik.handleChange}
 value={formik.values.username}
+type="email"
 
 >
 </TextField>
@@ -77,6 +79,7 @@ value={formik.values.username}
  variant="outlined"
  onChange={formik.handleChange}
  value={formik.values.password}
+ type="password"
 
 >
 
@@ -91,17 +94,10 @@ value={formik.values.username}
 
 <div className="checkbox-sign">
   <div className="stay"> 
-  <Checkbox  /><label className="in">Stay Login</label>
+  <Checkbox  /><label className="in">Remember me</label>
 
-  
-  </div>
-
-  <div className="check">
-  <a  className ="need" href="#">
-      Need help
-    </a>
-    
-  </div>
+</div>
+<br/>
 
 <Button variant="contained"  onClick={() => navigate("/signup")} className="create-account">Create a new account  </Button>
 
