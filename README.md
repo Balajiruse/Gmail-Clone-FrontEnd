@@ -33,7 +33,8 @@ This project aims to replicate the basic functionalities of Gmail, providing a p
 5. Ctrl+Click the link to open the Website
 
 ###images
-![image](![Alt text](image-1.png))
+[Alt text](image-1.png)
+![Alt text](image-2.png)
 
 
 ### deployed Link 
