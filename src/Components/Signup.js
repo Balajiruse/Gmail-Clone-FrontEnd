@@ -1,3 +1,4 @@
+
 import React from "react";
 import Card from '@mui/material/Card';
 import axios from "axios";
@@ -122,7 +123,13 @@ function Signup() {
           
 
          <br/>
-         <Button variant="contained" onClick={handleSubmit}>Sign Up</Button>
+         <Button variant="contained" onClick={handleSubmit}
+          type="submit"
+         
+        
+         
+         >
+          Sign Up</Button>
 
           
           </form>

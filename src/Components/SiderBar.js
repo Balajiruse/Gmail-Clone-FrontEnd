@@ -15,6 +15,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { RiSpamLine } from "react-icons/ri";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 function SideBar(props) {
   const [shows, setShows] = useState(false);
@@ -42,6 +43,8 @@ function SideBar(props) {
               <li className="sidebar-menu-buttons">
                 <CgInbox className="sider-menu-icon" />
                 <label className="sidebar-menu-label">Inbox</label>
+              
+               
                 <span className="tooltip-texts">Inbox</span>
               </li>
               <li className="sidebar-menu-buttons">

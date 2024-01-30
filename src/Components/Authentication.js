@@ -99,7 +99,7 @@ type="email"
 </div>
 <br/>
 
-<Button variant="contained"  onClick={() => navigate("/signup")} className="create-account">Create a new account  </Button>
+<Button variant="contained" type="submit" onClick={() => navigate("/signup")} className="create-account">Create a new account  </Button>
 
 </div>
 </Card>
